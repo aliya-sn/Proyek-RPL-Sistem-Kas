@@ -278,7 +278,7 @@ Workflow telah dibuat dan divalidasi secara lokal. Workflow belum dapat disebut 
 
 ## 9. Video Progres dan Demo
 
-- **Link Video:** [ISI LINK VIDEO PROGRES 1]
+- **Link Video:** https://youtu.be/VvudE1ajgp8?si=h-gPAm74slKmI39M
 
 ---
 
