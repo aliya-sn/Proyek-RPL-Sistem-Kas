@@ -1,0 +1,43 @@
+# Environment variables
+.env
+.env.backup
+.env.local
+
+# Vendor & dependencies
+/vendor/
+/node_modules/
+
+# Logs & temporary files
+/storage/logs/*.log
+*.log
+cookies*.txt
+scratch/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Security: environment backups and source backups
+.env.bak
+.env.*.bak
+*.bak
+*.bak.*
+*.backup
+
+# Temporary and cache files
+*.tmp
+*.temp
+storage/framework/cache/*
+
+# PHPUnit cache
+.phpunit.cache/
+
+# Node modules in any directory
+node_modules/

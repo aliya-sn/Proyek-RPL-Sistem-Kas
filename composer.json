@@ -1,0 +1,34 @@
+{
+    "name": "project-rpl/sistem-kas-ai",
+    "description": "Sistem Keuangan Kas Berbasis Web dengan AI",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Developer RPL"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Core/Helpers.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:unit": "phpunit --testsuite Unit"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    }
+}

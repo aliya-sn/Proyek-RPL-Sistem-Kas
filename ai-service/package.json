@@ -1,0 +1,31 @@
+{
+  "name": "sistem-kas-ai-service",
+  "version": "1.0.0",
+  "description": "Node.js AI Backend Service for Sistem Kas",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/chat.test.js",
+    "test:unit": "jest tests/unit --runInBand",
+    "test:all": "npm run test:unit && npm test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "keywords": [
+    "ai",
+    "financial-assistant",
+    "sistem-kas",
+    "gemini",
+    "express"
+  ],
+  "author": "Sistem Kas Team",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}

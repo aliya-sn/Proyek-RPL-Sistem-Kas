@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all requests to public directory
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(env|md|json|lock|sql|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block access to app, config, database, routes directories
+<IfModule mod_rewrite.c>
+    RewriteRule ^app/ - [F,L]
+    RewriteRule ^config/ - [F,L]
+    RewriteRule ^database/ - [F,L]
+    RewriteRule ^routes/ - [F,L]
+    RewriteRule ^vendor/ - [F,L]
+</IfModule>
